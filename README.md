@@ -24,7 +24,7 @@ This is a calculator application built with Angular that is responsive and modul
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```sh
 src/
