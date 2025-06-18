@@ -1,4 +1,4 @@
-#  Angular Calculator (Classic Structure)
+#  Angular Calculator
 
 This is a calculator application built with Angular that is responsive and modular. It supports basic arithmetic operations (addition, subtraction, multiplication, division), stores the last 5 operations, and uses a custom pipe to format results with two digits.
 
