@@ -49,8 +49,9 @@ src/
 ### 1. Clone the project:
 
 ```bash
-git clone https://github.com/yourUsername/angular-calculator.git
-cd angular-calculator
+git clone https://github.com/Tuna-hero/calculator-ts-and-angular.git
+cd calculator-ts-and-angular
+cd calculator
 ```
 
 
