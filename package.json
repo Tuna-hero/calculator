@@ -1,5 +1,5 @@
 {
-  "name": "staj-app",
+  "name": "calculator",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

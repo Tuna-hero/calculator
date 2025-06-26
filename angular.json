@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "staj-app": {
+    "calculator": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/staj-app",
+            "outputPath": "dist/calculator",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -58,12 +58,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "staj-app:build:production"
+              "browserTarget": "calculator:build:production"
             },
             "development": {
-              "browserTarget": "staj-app:build:development"
+              "browserTarget": "calculator:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "staj-app:build"
+            "browserTarget": "calculator:build"
           }
         },
         "test": {

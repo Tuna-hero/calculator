@@ -1,0 +1,91 @@
+.calculator {
+  max-width: 300px;
+  margin: auto;
+  background: linear-gradient(90deg, #000, gray );
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 40px #082ccf;
+  margin-top: 90px;
+}
+
+.display {
+background: #007ba7;
+  color: #fff;
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.expression {
+  color: #5b5b5b;
+}
+
+.result {
+  font-weight: bold;
+}
+
+.history-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  background: linear-gradient(90deg, #000, #5b5b5b);
+  color: white;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 10;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 5px 0 20px black;
+}
+
+.history-slider.open {
+  width: 200px;
+}
+
+.history-header {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  color: #082ccf;
+  font-size: 30px;
+
+}
+
+.history-list {
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.history-list li {
+  font-size: 0.9rem;
+  color: #ffffff;
+  transition: font-size 1s ease;
+}
+
+.history-list li:hover {
+font-size: 20px;
+}
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  background: #ffffff;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.4s,color 1s ,box-shadow 1.3s ease;
+  box-shadow: 0 0 5px #082ccf;
+}
+
+button:hover {
+  background: #082ccf;
+  color: white;
+  box-shadow: 0 0 20px #000;
+
+}

@@ -1,0 +1,22 @@
+<div class="calculator">
+<div class="display">
+  <div class="expression">{{ current }}</div>
+  <div class="result">{{ result }}</div>
+</div>
+
+<app-calculator-buttons (buttonPressed)="pressKey($event)"></app-calculator-buttons>
+
+<div class="history-slider" [class.open]="hovering" (mouseenter)="hovering = true" (mouseleave)="hovering = false">
+  <div class="history-header">Geçmiş</div>
+  <ul class="history-list">
+    <li *ngFor="let item of history">
+         {{ item.operation }}: {{ item.parameter1 }} ve {{ item.parameter2 }} = {{ item.result }}
+    </li>
+  </ul>
+</div>
+
+<br>
+  <button (click)="clearHistory()">Geçmişi Temizle</button>
+
+
+</div>
