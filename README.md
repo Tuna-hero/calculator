@@ -49,7 +49,7 @@ src/
 ### 1. Clone the project:
 
 ```bash
-git clone https://github.com/yourUsername/angular-calculator.git
+git clone https://github.com/yourUsername/calculator.git
 cd angular-calculator
 ```
 
